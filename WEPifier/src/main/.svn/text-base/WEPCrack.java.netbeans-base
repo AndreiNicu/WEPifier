@@ -1,0 +1,31 @@
+
+package main;
+
+/**
+ *
+ * @author root
+ */
+public class WEPCrack {   
+    private String log;
+    private int mark;
+    private RunApplication ra;
+    public WEPCrack(RunApplication t)
+    {
+        log="";
+        mark=0;
+        setRunApplication(t);
+    }
+    
+    public void setLog(String str){log=str;}
+    public void setMark(int x){mark=x;}
+    public void setRunApplication(RunApplication t){ra=t;}
+    
+    public String getLog(){return log;}
+    public int getMark(){return mark;}
+  
+    public void checkMark()
+    {
+        
+    }
+    
+}

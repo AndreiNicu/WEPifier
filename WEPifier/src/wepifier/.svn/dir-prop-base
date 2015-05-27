@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 33
+build
+.~lock.dump-01.kismet.csv#
+
+K 13
+svn:mergeinfo
+V 16
+/WEPifier:11-19*
+END

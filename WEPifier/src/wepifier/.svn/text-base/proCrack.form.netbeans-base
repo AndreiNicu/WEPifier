@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Menu class="javax.swing.JMenuBar" name="menuBar">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="menuBar" noResource="true"/>
+      </Properties>
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="WEPifierMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="WEPifierMenu.text"/>
+            <Property name="name" type="java.lang.String" value="WEPifierMenu" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="initializer">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+I"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="initializer.text"/>
+                <Property name="name" type="java.lang.String" value="initializer" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="exitMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="org.jdesktop.application.Application" id="quit" methodName="quit"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="exitMenuItem" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+              </AuxValues>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="interfaceHandler">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="interfaceHandler.text"/>
+            <Property name="name" type="java.lang.String" value="interfaceHandler" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <Menu class="javax.swing.JMenu" name="wlanInterface">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="wlanInterface.text"/>
+                <Property name="enabled" type="boolean" value="false"/>
+                <Property name="name" type="java.lang.String" value="wlanInterface" noResource="true"/>
+              </Properties>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="virtualInterface">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="virtualInterface.text"/>
+                <Property name="name" type="java.lang.String" value="virtualInterface" noResource="true"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="javax.swing.JMenu" name="mon0">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" resourceKey="mon0.text"/>
+                    <Property name="name" type="java.lang.String" value="mon0" noResource="true"/>
+                  </Properties>
+                  <SubComponents>
+                    <Menu class="javax.swing.JMenu" name="scanInterval">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="scanInterval.text"/>
+                        <Property name="name" type="java.lang.String" value="scanInterval" noResource="true"/>
+                      </Properties>
+                      <SubComponents>
+                        <MenuItem class="javax.swing.JRadioButtonMenuItem" name="intv5">
+                          <Properties>
+                            <Property name="selected" type="boolean" value="true"/>
+                            <Property name="text" type="java.lang.String" resourceKey="intv5.text"/>
+                            <Property name="name" type="java.lang.String" value="intv5" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="intv5ActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JRadioButtonMenuItem" name="intv10">
+                          <Properties>
+                            <Property name="selected" type="boolean" value="true"/>
+                            <Property name="text" type="java.lang.String" resourceKey="intv10.text"/>
+                            <Property name="name" type="java.lang.String" value="intv10" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="intv10ActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JRadioButtonMenuItem" name="intv15">
+                          <Properties>
+                            <Property name="selected" type="boolean" value="true"/>
+                            <Property name="text" type="java.lang.String" resourceKey="intv15.text"/>
+                            <Property name="name" type="java.lang.String" value="intv15" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="intv15ActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                      </SubComponents>
+                    </Menu>
+                    <MenuItem class="javax.swing.JMenuItem" name="rescanAccesspoints">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="rescanAccesspoints.text"/>
+                        <Property name="name" type="java.lang.String" value="rescanAccesspoints" noResource="true"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+              </SubComponents>
+            </Menu>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="sniffer">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="sniffer.text"/>
+            <Property name="name" type="java.lang.String" value="sniffer" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <Menu class="javax.swing.JMenu" name="victims">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="victims.text"/>
+                <Property name="name" type="java.lang.String" value="victims" noResource="true"/>
+              </Properties>
+            </Menu>
+            <MenuItem class="javax.swing.JMenuItem" name="startSniffer">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="startSniffer.text"/>
+                <Property name="name" type="java.lang.String" value="startSniffer" noResource="true"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="attack">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="attack.text"/>
+            <Property name="name" type="java.lang.String" value="attack" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <Menu class="javax.swing.JMenu" name="noClients">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="noClients.text"/>
+                <Property name="name" type="java.lang.String" value="noClients" noResource="true"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="chopChopAttack">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" resourceKey="chopChopAttack.text"/>
+                    <Property name="name" type="java.lang.String" value="chopChopAttack" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="fragmentAttack">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" resourceKey="fragmentAttack.text"/>
+                    <Property name="name" type="java.lang.String" value="fragmentAttack" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="withClients">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="withClients.text"/>
+                <Property name="name" type="java.lang.String" value="withClients" noResource="true"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="arpRequestReplayAttach">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" resourceKey="arpRequestReplayAttach.text"/>
+                    <Property name="name" type="java.lang.String" value="arpRequestReplayAttach" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="fragWithClients">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" resourceKey="fragWithClients.text"/>
+                    <Property name="name" type="java.lang.String" value="fragWithClients" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="withClientsAP">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="withClientsAP.text"/>
+                <Property name="name" type="java.lang.String" value="withClientsAP" noResource="true"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="cafeLatteAttack">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" resourceKey="cafeLatteAttack.text"/>
+                    <Property name="name" type="java.lang.String" value="cafeLatteAttack" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="WEPCrack">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="WEPCrack.text"/>
+            <Property name="name" type="java.lang.String" value="WEPCrack" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="crack">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="crack.text"/>
+                <Property name="name" type="java.lang.String" value="crack" noResource="true"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" resourceKey="proCrack.title"/>
+    <Property name="background" type="java.awt.Color" resourceKey="proCrack.background"/>
+    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+      <Color id="Default Cursor"/>
+    </Property>
+    <Property name="foreground" type="java.awt.Color" resourceKey="proCrack.foreground"/>
+    <Property name="name" type="java.lang.String" value="proCrack" noResource="true"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="menuBar"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="channelPick" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                      <Component id="channelLabel" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="manualBssid" min="-2" pref="211" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+                      <Component id="removeVirtualMons" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="manualBssidLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+              <Component id="allChannels" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="684" max="32767" attributes="0"/>
+          </Group>
+          <Component id="UpperPane" alignment="0" max="32767" attributes="0"/>
+          <Component id="LowerPane" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <Component id="UpperPane" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="LowerPane" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="channelPick" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="channelLabel" min="-2" pref="23" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="manualBssid" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="removeVirtualMons" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="manualBssidLabel" min="-2" pref="35" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="allChannels" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="LowerPane">
+      <Properties>
+        <Property name="background" type="java.awt.Color" resourceKey="LowerPane.background"/>
+        <Property name="foreground" type="java.awt.Color" resourceKey="LowerPane.foreground"/>
+        <Property name="name" type="java.lang.String" value="LowerPane" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="856" max="32767" attributes="0"/>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="lowerPane" pref="832" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="194" max="32767" attributes="0"/>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="lowerPane" pref="170" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="lowerPane">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="lowerPane" noResource="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="lowerTextfield">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="name" type="java.lang.String" value="lowerTextfield" noResource="true"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="UpperPane">
+      <Properties>
+        <Property name="background" type="java.awt.Color" resourceKey="UpperPane.background"/>
+        <Property name="foreground" type="java.awt.Color" resourceKey="UpperPane.foreground"/>
+        <Property name="name" type="java.lang.String" value="UpperPane" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="upperPane" pref="832" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="upperPane" pref="151" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="upperPane">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="upperPane" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="upperTextfield">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="name" type="java.lang.String" value="upperTextfield" noResource="true"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JSlider" name="channelPick">
+      <Properties>
+        <Property name="maximum" type="int" value="14"/>
+        <Property name="minimum" type="int" value="1"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Crosshair Cursor"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="channelPick" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="manualBssid">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="manualBssid.text"/>
+        <Property name="name" type="java.lang.String" value="manualBssid" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="channelLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="channelLabel.text"/>
+        <Property name="name" type="java.lang.String" value="channelLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="manualBssidLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="manualBssidLabel.text"/>
+        <Property name="name" type="java.lang.String" value="manualBssidLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="allChannels">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="allChannels.text"/>
+        <Property name="name" type="java.lang.String" value="allChannels" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="removeVirtualMons">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="removeVirtualMons.text"/>
+        <Property name="name" type="java.lang.String" value="removeVirtualMons" noResource="true"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

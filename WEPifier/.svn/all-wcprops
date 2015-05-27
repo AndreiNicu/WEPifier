@@ -1,0 +1,33 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 20
+/svn/team8/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/team8/!svn/ver/59/WEPifier
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/team8/!svn/ver/16/WEPifier/build.xml
+END
+manifest.mf
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/team8/!svn/ver/16/WEPifier/manifest.mf
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/team8/!svn/ver/12/WEPifier/.project
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/team8/!svn/ver/15/WEPifier/.classpath
+END

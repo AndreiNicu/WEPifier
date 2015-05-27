@@ -1,0 +1,11 @@
+# Application global resources
+
+Application.name = WEPifier
+Application.title = About WEPifier
+Application.version = 1.0
+Application.vendor = SHA Inc.
+Application.homepage = www.lnu.se/projects/WEPifier
+Application.description = A simple Java desktop application based on Swing Application Framework.
+Application.vendorId = Sun
+Application.id = ${Application.name}
+Application.lookAndFeel = system
